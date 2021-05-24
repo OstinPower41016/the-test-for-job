@@ -1,0 +1,14 @@
+.navbar {
+  background: rgb(107, 41, 182);
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

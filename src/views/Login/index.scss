@@ -1,0 +1,33 @@
+.login {
+  &__input-wrapper {
+    display: grid;
+    grid-template-columns: [label] 100px [input] auto;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  label {
+    grid-area: label;
+    text-align: right;
+    margin-right: 10px;
+  }
+  input {
+    grid-area: input;
+  }
+  &__btn {
+    padding: 6px 8px;
+    background: #6b29b6;
+    color: white;
+    display: block;
+    margin: 10px auto 0;
+  }
+  &__error-msg {
+    display: block;
+    margin-top: 10px;
+    text-transform: lowercase;
+    color: red;
+  }
+  &__input-error {
+    border: 1px solid red;
+  }
+}
